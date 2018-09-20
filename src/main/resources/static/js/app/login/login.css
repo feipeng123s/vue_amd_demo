@@ -1,0 +1,170 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.h_panel{
+    width: 1130px;
+    margin: 0 auto;
+}
+.h_logo{
+    width: 200px;
+    height: 98px;
+    background: url(https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png) no-repeat;
+}
+.login_banner_panel{
+    width: 100%;
+    height: 588px;
+    background-color: lightblue;
+}
+.layout_panel{
+    width: 1130px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.layout{
+    width: 410px;
+    min-height: 524px;
+    margin: 0 0 0 auto;
+    font-size: 14px;
+    background-color: #fff;
+}
+.nav_tabs{
+    padding: 27px 0 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #e0e0e0;
+}
+.nav_tabs .now{
+    color: #f56600;
+}
+.nav_tabs a{
+    color: #666;
+}
+.nav_tabs .line{
+    width: 1px;
+    height: 24px;
+    margin: 0 35px 0 42px;
+    border: 1px solid #e0e0e0;
+}
+.login_area{
+    width: 348px;
+    margin: 0 auto;
+    padding: 0;
+}
+.loginbox{
+    position: relative;
+}
+.input_panel input{
+    width:316px;
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 14px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    color: #333;
+    border: 1px solid #e0e0e0;
+}
+.btns_bg{
+    padding-top: 10px;
+}
+.login_button{
+    background: #ef5b00;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 14px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+input{
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+.other_panel .sms_link{
+    float: left;
+}
+.other_panel .phone_login{
+    background-color: #fff;
+    color: #ef5b00;
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.reverse .link_area{
+    color: #999;
+    text-align: center;
+    float: right;
+}
+.link_area a{
+    color: #999;
+    font-size: 14px;
+}
+.other_panel .other_login_type{
+    position: absolute;
+    top: 350px;
+    text-align: center;
+    width: 100%;
+}
+.other_panel .other_login_type .oth_type_tit{
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+.other_panel .other_login_type .oth_type_txt{
+    font-size: 14px;
+    color: #bbb;
+    margin: 0 auto;
+    text-align: center;
+}
+.icon_type{
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #0288d1;
+    margin: 0 17px;
+}
+.clearfix:after {
+    display: block;
+    content: "\20";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.footer_panel{
+    color: #757575;
+    font-size: 14px;
+    height: 80px;
+    text-align: center;
+    margin-top: 100px;
+}
+.footer_panel .lang-select-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.lang-select-list li{
+    display: inline-block;
+}
+.lang-select-list li a{
+    display: inline-block;
+    padding: 0 10px;
+}
