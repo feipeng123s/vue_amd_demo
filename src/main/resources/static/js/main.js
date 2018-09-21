@@ -2,7 +2,11 @@ require.config(mergeRequireConfig({
   // baseUrl: '' //默认值为main.js所在目录
 }));
 
-require(['vue', './app/app', 'router'], function (Vue, App, router) {
+// 引用element-ui样式
+require(['css!lib/element-ui/theme-chalk/index.css']);
+
+require(['vue', './app/app', 'router', 'ELEMENT'], function (Vue, App, router, element) {
+  Vue.use(element);
 
   new Vue({
     el: '#app',

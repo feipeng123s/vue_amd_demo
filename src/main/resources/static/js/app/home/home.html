@@ -1,6 +1,12 @@
 <div>
-    <div class="home_nav">Nav</div>
-    <div class="home_menu">Menu</div>
+    <div class="home_nav">
+        <h1>这是头部</h1>
+    </div>
+    <div class="home_menu">
+        <div v-for="(item,$index) in menu" :key="$index" class="menu">
+            <router-link :to="item.href">{{item.label}}</router-link>
+        </div>
+    </div>
     <div class="home_content">
         <router-view></router-view>
     </div>

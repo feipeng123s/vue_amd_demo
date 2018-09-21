@@ -1,6 +1,13 @@
 .home_nav{
-    height: 100px;
-    background: #0288d1;
+    height: 80px;
+    background: dodgerblue;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+}
+h1{
+    margin: 0;
+    padding: 0;
 }
 .home_body{
     position: relative;
@@ -9,15 +16,21 @@
     width: 200px;
     background: #666666;
     position: fixed;
-    top: 100px;
+    top: 80px;
     left: 0;
     bottom: 0;
 }
+.home_menu .menu{
+    padding: 10px;
+    text-align: center;
+}
+.home_menu .menu a{
+    color: #fff;
+}
 .home_content{
     position: absolute;
-    top: 100px;
+    top: 80px;
     bottom: 0;
     left: 200px;
     right: 0;
-    background: yellowgreen;
 }

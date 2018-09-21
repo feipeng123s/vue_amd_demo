@@ -6,6 +6,7 @@ define(function (require) {
   let hello = require('./app/hello/hello');
   let login = require('./app/login/login');
   let home = require('./app/home/home');
+  let userList = require('./app/user/list');
 
   return new Router({
     routes: [
@@ -18,6 +19,11 @@ define(function (require) {
             path: 'hello',
             name: 'hello',
             component: hello
+          },
+          {
+            path: 'user',
+            name: 'user',
+            component: userList
           }
         ]
       },
