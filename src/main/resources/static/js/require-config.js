@@ -6,7 +6,8 @@ var baseConfig = {
     'css': URL_LIB + 'require/css.min',
     'vue': URL_LIB + 'vue/vue.min',
     'vue-router': URL_LIB + 'vue/vue-router.min',
-    'ELEMENT': URL_LIB + 'element-ui/index'
+    'ELEMENT': URL_LIB + 'element-ui/index',
+    'assets': '../assets'
   },
   // 为那些没有使用define()来声明依赖关系、设置模块的"浏览器全局变量注入"型脚本做依赖和导出配置
   shim: {

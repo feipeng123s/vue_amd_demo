@@ -1,9 +1,3 @@
-html,body{
-    height: 100%;
-}
-body{
-    margin: 0;
-}
 .h_panel{
     width: 1130px;
     margin: 0 auto;
@@ -80,12 +74,6 @@ body{
     color: #fff;
     cursor: pointer;
 }
-input{
-    outline: 0;
-    margin: 0;
-    padding: 0;
-    border: 0 none;
-}
 .other_panel .sms_link{
     float: left;
 }
@@ -100,9 +88,6 @@ input{
     cursor: pointer;
     display: block;
     width: 100%;
-}
-a{
-    text-decoration: none;
 }
 .reverse .link_area{
     color: #999;
@@ -140,14 +125,6 @@ a{
     border-radius: 50%;
     background-color: #0288d1;
     margin: 0 17px;
-}
-.clearfix:after {
-    display: block;
-    content: "\20";
-    height: 0;
-    clear: both;
-    overflow: hidden;
-    visibility: hidden;
 }
 .footer_panel{
     color: #757575;

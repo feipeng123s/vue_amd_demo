@@ -1,6 +1,28 @@
 <div>
-    <div class="home_nav">
-        <h1>这是头部</h1>
+    <div class="home_nav clearfix">
+        <div class="nav_name pull-left">
+            个人博客系统
+        </div>
+        <div class="nav_user pull-right" id="dropdown_menu">
+            <p>
+                <i class="icon"></i>
+                张三
+            </p>
+            <transition>
+                <ul class="dropdown-menu" v-show="showPopper" id="dropdown_element" @click="hide">
+                    <li>
+                        <router-link to="/hello">账户信息</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/hello">修改密码</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/hello">退出登录</router-link>
+                    </li>
+                    <div class="popper__arrow"></div>
+                </ul>
+            </transition>
+        </div>
     </div>
     <div class="home_menu">
         <div v-for="(item,$index) in menu" :key="$index" class="menu">

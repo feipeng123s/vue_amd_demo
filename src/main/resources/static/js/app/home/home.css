@@ -1,13 +1,64 @@
 .home_nav{
-    height: 80px;
-    background: dodgerblue;
+    height: 50px;
+    line-height: 50px;
+    background-color: #3385FF;
     text-align: center;
-    line-height: 80px;
     color: #fff;
 }
-h1{
+.nav_name{
+    width: 200px;
+}
+.nav_user{
+    width: 100px;
+    position: relative;
+}
+.nav_user p{
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+.nav_user .icon {
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background: url(../../../assets/images/user.svg) no-repeat center;
+    background-size: 20px 20px;
+    white-space:nowrap;
+    letter-spacing: -1em;
+    text-indent: -99em;
+    color: transparent;
+    /* IE7 */
+    /**text-indent: 0;*/
+    /**zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\3000');*/
+}
+.dropdown-menu{
+    position: absolute;
+    right: 0;
+    padding: 10px 0;
+    min-width: 120px;
+    margin: 8px 5px 5px 0;
+    background-color: #fff;
+    border: 1px solid #ebeef5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 5;
+}
+.dropdown-menu li{
+    list-style: none;
+    line-height: 36px;
+    padding: 0 20px;
     margin: 0;
-    padding: 0;
+    color: #606266;
+    cursor: pointer;
+    outline: 0;
+}
+.dropdown-menu li:hover{
+    background-color: #ecf5ff;
+    color: #66b1ff;
+}
+.icon:before {
+    content: '\3000';
 }
 .home_body{
     position: relative;
@@ -16,7 +67,7 @@ h1{
     width: 200px;
     background: #666666;
     position: fixed;
-    top: 80px;
+    top: 50px;
     left: 0;
     bottom: 0;
 }
@@ -29,8 +80,32 @@ h1{
 }
 .home_content{
     position: absolute;
-    top: 80px;
+    top: 50px;
     bottom: 0;
     left: 200px;
     right: 0;
+}
+/*带边框尖角样式*/
+.popper__arrow, .popper__arrow::after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-width: 0;
+}
+.popper__arrow {
+    top: -6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-bottom-color: #ebeef5;
+    -webkit-filter: drop-shadow(0 2px 12px rgba(0, 0, 0, .03));
+    filter: drop-shadow(0 2px 12px rgba(0, 0, 0, .03));
+}
+.popper__arrow::after {
+    content: " ";
+    margin-left: -6px; /*让两个三角重合*/
+    top: 1px; /*向下偏移，制造边框*/
+    border-bottom-color: #fff;
 }

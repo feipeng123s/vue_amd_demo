@@ -23,7 +23,26 @@ define(function (require) {
             label: 'menu4',
             href: '/hello'
           }
-        ]
+        ],
+        showPopper: false
+      }
+    },
+    mounted () {
+      let vm = this
+      let navUser = document.getElementById("dropdown_menu")
+      let dropdownElm = document.getElementById('dropdown_element')
+
+      navUser.addEventListener('mouseenter', vm.show)
+      dropdownElm.addEventListener('mouseenter', vm.show)
+      navUser.addEventListener('mouseleave', vm.hide)
+      dropdownElm.addEventListener('mouseleave', vm.hide)
+    },
+    methods: {
+      show: function () {
+        this.showPopper = true
+      },
+      hide: function () {
+        this.showPopper = false
       }
     }
   }
