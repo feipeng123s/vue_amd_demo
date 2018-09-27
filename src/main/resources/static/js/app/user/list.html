@@ -1,6 +1,12 @@
-<div>
-    <h2 style="margin-left: 20px;">用户列表</h2>
-    <div style="margin: 10px 20px;">
+<div style="
+    overflow-y: auto;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: -15px;
+">
+    <h2>用户列表</h2>
+    <div>
         <el-table :data="users" border>
             <el-table-column prop="id" label="ID"></el-table-column>
             <el-table-column prop="name" label="名称"></el-table-column>

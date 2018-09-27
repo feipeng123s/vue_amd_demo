@@ -17,6 +17,12 @@ define(function (require) {
           {id: 8, name: 'H', sex: 'female'},
           {id: 9, name: 'I', sex: 'male'},
           {id: 10, name: 'J', sex: 'female'},
+          {id: 12, name: 'K', sex: 'male'},
+          {id: 12, name: 'K', sex: 'male'},
+          {id: 12, name: 'K', sex: 'male'},
+          {id: 12, name: 'K', sex: 'male'},
+          {id: 12, name: 'K', sex: 'male'},
+          {id: 12, name: 'K', sex: 'male'},
           {id: 12, name: 'K', sex: 'male'}
         ]
       }

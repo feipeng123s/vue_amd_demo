@@ -1,3 +1,6 @@
+.wrap{
+    /*min-width: 1080px;*/
+}
 .home_nav{
     height: 50px;
     line-height: 50px;
@@ -17,19 +20,8 @@
     line-height: 20px;
     display: inline-block;
 }
-.nav_user .icon {
-    display: inline-block;
-    width:20px;
-    height:20px;
-    background: url(../../../assets/images/user.svg) no-repeat center;
-    background-size: 20px 20px;
-    white-space:nowrap;
-    letter-spacing: -1em;
-    text-indent: -99em;
-    color: transparent;
-    /* IE7 */
-    /**text-indent: 0;*/
-    /**zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\3000');*/
+.nav_user .icon-before-text {
+    background-image: url(../../../assets/images/user.svg);
 }
 .dropdown-menu{
     position: absolute;
@@ -57,26 +49,36 @@
     background-color: #ecf5ff;
     color: #66b1ff;
 }
-.icon:before {
-    content: '\3000';
-}
 .home_body{
     position: relative;
 }
 .home_menu{
     width: 200px;
-    background: #666666;
+    background: #fff;
     position: fixed;
     top: 50px;
     left: 0;
     bottom: 0;
 }
-.home_menu .menu{
-    padding: 10px;
-    text-align: center;
+.home_menu .menu_wrap{
+    width: 217px;
+    height: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
-.home_menu .menu a{
-    color: #fff;
+.home_menu .icon-before-text{
+    background-image: url(../../../assets/images/menu.svg);
+    margin-right: 15px;
+}
+.home_menu .menu{
+    padding: 15px 30px;
+    text-align: left;
+    color: #000;
+}
+.home_menu .menu:hover{
+    background-color: #ecf5ff;
+    color: #66b1ff;
 }
 .home_content{
     position: absolute;
@@ -84,6 +86,15 @@
     bottom: 0;
     left: 200px;
     right: 0;
+    background: #EDF0F5;
+}
+.content_wrapper{
+    margin: 0 15px;
+    background: #fff;
+    height: 100%;
+    overflow-y: auto;
+    padding: 15px 20px;
+    box-sizing: border-box;
 }
 /*带边框尖角样式*/
 .popper__arrow, .popper__arrow::after {

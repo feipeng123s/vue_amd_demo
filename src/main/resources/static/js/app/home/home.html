@@ -1,11 +1,11 @@
-<div>
+<div class="wrap">
     <div class="home_nav clearfix">
         <div class="nav_name pull-left">
             个人博客系统
         </div>
         <div class="nav_user pull-right" id="dropdown_menu">
             <p>
-                <i class="icon"></i>
+                <i class="icon-before-text"></i>
                 张三
             </p>
             <transition>
@@ -25,11 +25,20 @@
         </div>
     </div>
     <div class="home_menu">
-        <div v-for="(item,$index) in menu" :key="$index" class="menu">
-            <router-link :to="item.href">{{item.label}}</router-link>
+        <div class="menu_wrap">
+            <div v-for="(item,$index) in menu" :key="$index" class="menu">
+                <router-link :to="item.href">
+                    <i class="icon-before-text"></i>
+                    {{item.label}}
+                </router-link>
+            </div>
         </div>
     </div>
     <div class="home_content">
-        <router-view></router-view>
+        <div class="content_wrapper">
+            <div style="overflow: hidden;position: relative;height: 100%;">
+                <router-view></router-view>
+            </div>
+        </div>
     </div>
 </div>
