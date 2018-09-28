@@ -1,6 +1,7 @@
 define(function (require) {
   let template = require('text!./list.html');
   require('css!./list.css');
+  let axios = require('axios');
 
   return {
     template: template,
@@ -26,6 +27,14 @@ define(function (require) {
           {id: 12, name: 'K', sex: 'male'}
         ]
       }
+    },
+    created () {
+      axios.get('/user/list').then(function (data) {
+        console.log(data);
+      });
+      axios.get('/user/get').then(function (data) {
+        console.log(data);
+      })
     }
   }
 });
