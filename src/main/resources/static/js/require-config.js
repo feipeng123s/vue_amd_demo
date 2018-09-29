@@ -9,6 +9,7 @@ var baseConfig = {
     'ELEMENT': URL_LIB + 'element-ui/index',
     'mock': URL_LIB + 'mock-min',
     'axios': URL_LIB + 'axios.min',
+    'qs': URL_LIB + 'qs',
     'assets': '../assets'
   },
   // 为那些没有使用define()来声明依赖关系、设置模块的"浏览器全局变量注入"型脚本做依赖和导出配置

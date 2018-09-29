@@ -1,0 +1,30 @@
+{
+  "users": [
+    {"id": 1, "name": "张三", "sex": "男"},
+    {"id": 2, "name": "李四", "sex": "男"},
+    {"id": 3, "name": "王芳", "sex": "女"},
+    {"id": 4, "name": "赵云", "sex": "男"},
+    {"id": 5, "name": "张飞", "sex": "男"},
+    {"id": 6, "name": "孙尚香", "sex": "女"},
+    {"id": 7, "name": "李白", "sex": "男"},
+    {"id": 8, "name": "小乔", "sex": "女"}
+  ],
+  "menu": [
+    {
+      "label": "Hello",
+      "href": "/hello"
+    },
+    {
+      "label": "用户管理",
+      "href": "/user"
+    },
+    {
+      "label": "menu3",
+      "href": "/hello"
+    },
+    {
+      "label": "menu4",
+      "href": "/hello"
+    }
+  ]
+}

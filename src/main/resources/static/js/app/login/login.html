@@ -14,14 +14,14 @@
                         </div>
                     </div>
                     <div class="login_area">
-                        <form>
+                        <form action="/user/login" method="post">
                             <div class="loginbox">
                                 <div class="input_panel">
-                                    <input type="text" autocomplete="off" placeholder="邮箱/手机号码"/>
-                                    <input type="password" autocomplete="off" placeholder="密码"/>
+                                    <input type="text" name="username" autocomplete="off" placeholder="邮箱/手机号码" v-model="username"/>
+                                    <input type="password" name="password" autocomplete="off" placeholder="密码" v-model="password"/>
                                 </div>
                                 <div class="btns_bg">
-                                    <input type="button" value="登录" class="login_button">
+                                    <input type="submit" value="登录" class="login_button">
                                 </div>
                                 <div class="other_panel clearfix">
                                     <span class="sms_link">

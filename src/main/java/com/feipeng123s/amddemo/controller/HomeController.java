@@ -1,18 +1,12 @@
 package com.feipeng123s.amddemo.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class HomeController {
-    @RequestMapping("/")
-    public ModelAndView index(){
-        return new ModelAndView("index");
-    }
-
-    @RequestMapping("/login")
-    public ModelAndView login(){
-        return new ModelAndView("login");
+    @RequestMapping("/index")
+    public String index(){
+        return "index";
     }
 }
