@@ -15,13 +15,16 @@ define(function (require) {
     methods: {
       login: function () {
         let vm = this;
-        axios.post('/user/login', qs.stringify({username: vm.username, password: vm.password})).then(function (response) {
-          if (response.data.success) {
-            alert('login success');
-          } else {
-            alert('login failed');
-          }
-        })
+        axios.post('/user/login', qs.stringify({username: vm.username, password: vm.password}))
+          .then(() => {
+            alert('登录成功');
+          })
+          .catch(err => {
+            // console.log(err);
+            if (err.response && err.response.code === 401) {
+              alert('登录失败');
+            }
+          })
       }
     }
   }
