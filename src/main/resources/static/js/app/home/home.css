@@ -65,16 +65,17 @@
     height: 100%;
     padding: 15px 0;
     box-sizing: border-box;
-    overflow-y: auto;
-}
-.home_menu .icon-before-text{
-    background-image: url(../../../assets/images/menu.svg);
-    margin-right: 15px;
+    overflow-y: scroll;
 }
 .home_menu .menu{
+    display: block;
     padding: 15px 30px;
     text-align: left;
     color: #000;
+}
+.home_menu .menu .icon-before-text{
+    background-image: url(../../../assets/images/menu.svg);
+    margin-right: 15px;
 }
 .home_menu .menu:hover{
     background-color: #ecf5ff;
@@ -88,11 +89,19 @@
     right: 0;
     background: #EDF0F5;
 }
-.content_wrapper{
+.outer_container{
+    overflow: hidden;
+    height: 100%;
+    position: relative;
     margin: 0 15px;
     background: #fff;
+}
+.inner_container{
+    overflow-y: scroll;
     height: 100%;
-    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    right: -17px;
     padding: 15px 20px;
     box-sizing: border-box;
 }

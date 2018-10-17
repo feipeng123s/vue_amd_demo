@@ -17,14 +17,6 @@
     {
       "label": "用户管理",
       "href": "/user"
-    },
-    {
-      "label": "menu3",
-      "href": "/hello"
-    },
-    {
-      "label": "menu4",
-      "href": "/hello"
     }
   ]
 }
