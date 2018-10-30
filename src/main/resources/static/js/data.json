@@ -11,8 +11,8 @@
   ],
   "menu": [
     {
-      "label": "Hello",
-      "href": "/hello"
+      "label": "个人主页",
+      "href": "/main"
     },
     {
       "label": "用户管理",

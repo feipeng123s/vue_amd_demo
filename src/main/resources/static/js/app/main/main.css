@@ -1,0 +1,47 @@
+.page_header{
+    background: #333;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.05),
+                0 4px 8px rgba(0,0,0,0.05),
+                0 2px 4px rgba(0,0,0,0.1);
+}
+.page_header__home{
+    background-size: cover;
+    background: url(../../../assets/images/header-wide-1440w.jpg) center center;
+}
+.page_header .wrap{
+    margin: auto;
+    max-width: 43rem;
+}
+.page_header__home .page_header__logo{
+    margin-bottom: 9rem;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+.icon_logo{
+    width: 3em;
+    height: 3em;
+}
+.page_header__home .page_header__title{
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height:  1.2;
+}
+.page_header__home .page_header__sub-title{
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 1.75rem;
+}
+.page_header__home .page_header__social{
+    margin-top: 1.5rem;
+}
+.accessibility{
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
